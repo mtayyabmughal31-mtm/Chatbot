@@ -1,6 +1,7 @@
 import streamlit as st
-from groq import Groq
+
 from dotenv import load_dotenv
+from groq import Groq
 import os
 
 # =========================
@@ -11,7 +12,7 @@ load_dotenv()
 # =========================
 # 🔐 GET API KEY FROM ENV
 # =========================
-api_key = os.getenv("groq_api_key")
+api_key = os.getenv("GROQ_API_KEY")
 
 # Safety check (important)
 if not api_key:
